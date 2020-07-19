@@ -36,12 +36,7 @@ public class CustomListAdapter extends ArrayAdapter<Cards> {
         ImageView image;
     }
 
-    /**
-     * Default constructor for the PersonListAdapter
-     * @param context
-     * @param resource
-     * @param objects
-     */
+
     public CustomListAdapter(Context context, int resource, ArrayList<Cards> objects) {
         super(context, resource, objects);
         mContext = context;
