@@ -9,7 +9,8 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="wrap_content"
+        app:cardPreventCornerOverlap="false"
         app:cardCornerRadius="10dp"
         app:cardElevation="5dp"
         android:layout_marginTop="10dp">
@@ -17,11 +18,11 @@
         <ImageView
             android:id="@+id/cardImage"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@color/cardview_dark_background"
-            android:scaleType="centerCrop">
-
-        </ImageView>
+            android:layout_height="150dp"
+            android:src="@drawable/kitchen"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:background="@color/cardview_light_background" />
 
         <TextView
             android:id="@+id/cardTitle"
@@ -33,9 +34,7 @@
             android:layout_marginTop="70dp"
             android:background="#80ffffff"
             android:textColor="@android:color/black"
-            android:textSize="20dp">
-
-        </TextView>
+            android:textSize="20sp" />
 
     </androidx.cardview.widget.CardView>
 
